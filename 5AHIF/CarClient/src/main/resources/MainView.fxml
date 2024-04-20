@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.MainController">
+   <children>
+      <Label fx:id="lblMessage" maxWidth="1.7976931348623157E308" style="-fx-background-color: yellow;" text="Message label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txtUri" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="208.0" promptText="http://localhost:8080" text="http://localhost:8080/FinalProject" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Button fx:id="btnConnection" layoutX="230.0" layoutY="14.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="26.0" prefWidth="115.0" text="Connect" />
+      <TabPane layoutY="50.0" prefHeight="427.0" prefWidth="894.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <tabs>
+            <Tab text="Cars">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="340.0" prefWidth="200.0">
+                    <Button fx:id="btnGetCars" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="26.0" prefWidth="115.0" text="Get cars" />
+                  <GridPane hgap="14.0" layoutX="15.0" layoutY="49.0" prefHeight="336.0" prefWidth="784.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                          <TableView fx:id="tableCars" onMouseClicked="#onCarSelected" prefHeight="182.0" prefWidth="418.0">
+                              <columns>
+                                  <TableColumn fx:id="colCarId" prefWidth="194.0" text="ID" />
+                                  <TableColumn fx:id="colCarName" prefWidth="188.0" text="Name" />
+                              </columns>
+                          </TableView>
+                          <TableView fx:id="tableCarDetails" prefHeight="330.0" prefWidth="382.0" GridPane.columnIndex="1">
+                              <columns>
+                                  <TableColumn fx:id="colCarDatetime" prefWidth="157.0" text="Datetime" />
+                                  <TableColumn fx:id="colCarLong" prefWidth="101.0" text="Longitude" />
+                                  <TableColumn fx:id="colCarLat" prefWidth="125.0" text="Latitude" />
+                              </columns>
+                          </TableView>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="btnUpdatePos" layoutX="140.0" layoutY="14.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="26.0" prefWidth="173.0" text="Simulate next car positions" />
+                  <Button fx:id="btnGetNearest" layoutX="625.0" layoutY="14.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="26.0" prefWidth="173.0" text="Get nearest petrol stations" AnchorPane.rightAnchor="14.0" />
+                  <TextField fx:id="txtDistance" layoutX="481.0" layoutY="14.0" prefHeight="26.0" prefWidth="133.0" promptText="distance in meters" AnchorPane.rightAnchor="198.0" />
+                </AnchorPane>
+            </Tab>
+            <Tab text="Petrol stations">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <TableView fx:id="tablePetrolStations" layoutX="14.0" layoutY="51.0" prefHeight="330.0" prefWidth="780.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0">
+                        <columns>
+                            <TableColumn fx:id="colPetId" prefWidth="187.0" text="ID" />
+                            <TableColumn fx:id="colPetName" prefWidth="192.0" text="Name" />
+                            <TableColumn fx:id="colPetLong" prefWidth="216.0" text="Longitude" />
+                            <TableColumn fx:id="colPetLat" minWidth="0.0" prefWidth="188.0" text="Latitude" />
+                        </columns>
+                    </TableView>
+                    <Button fx:id="btnGetPetrolStations" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBtnClick" prefWidth="128.0" text="Get Petrol Stations" />
+                </AnchorPane>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="btnInit" layoutX="353.0" layoutY="14.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="26.0" prefWidth="183.0" text="Init DB (cars &amp; petrol stations)" />
+      <Button fx:id="btnCreateIndex" layoutX="544.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBtnClick" text="Create Petrol Station Index" />
+   </children>
+</AnchorPane>

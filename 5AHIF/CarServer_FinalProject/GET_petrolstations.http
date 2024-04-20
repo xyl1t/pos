@@ -1,0 +1,5 @@
+#GET localhost:8080/FinalProject/petrolstations
+GET localhost:8080/FinalProject/petrolstations?sortBy=location
+#GET localhost:8080/FinalProject/petrolstations?sortBy=name
+
+#GET localhost:8080/FinalProject/petrolstations/65d8ffa03bb89733e2952bd3

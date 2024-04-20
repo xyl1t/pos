@@ -1,0 +1,7 @@
+# Get all cars
+GET localhost:8080/FinalProject/cars
+#GET localhost:8080/FinalProject/cars?type=names
+
+# Get one car
+#GET localhost:8080/FinalProject/cars/65d8f685e09f8339a1e2fbae
+#GET localhost:8080/FinalProject/cars/65e2550f15a96f3338dff960?listPositions=true

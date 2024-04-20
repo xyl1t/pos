@@ -1,0 +1,47 @@
+{
+  "Isetta": {
+    "id": 11,
+    "name": "Isetta",
+    "date": {
+      "year": 2012,
+      "month": 1,
+      "day": 22
+    },
+    "collRepairs": [
+      [
+        {
+          "year": 2022,
+          "month": 1,
+          "day": 17
+        },
+        {
+          "id": 1,
+          "date": {
+            "year": 2022,
+            "month": 1,
+            "day": 17
+          },
+          "text": "rfdgscg",
+          "amount": 12
+        }
+      ],
+      [
+        {
+          "year": 2022,
+          "month": 1,
+          "day": 19
+        },
+        {
+          "id": 0,
+          "date": {
+            "year": 2022,
+            "month": 1,
+            "day": 19
+          },
+          "text": "rfdgscg",
+          "amount": 12
+        }
+      ]
+    ]
+  }
+}

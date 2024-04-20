@@ -1,0 +1,8 @@
+POST http://localhost:8080/MyBookServer/books
+Content-Type: application/json
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.MainController">
+   <children>
+      <Label fx:id="lblMessage" layoutX="12.0" layoutY="472.0" prefHeight="27.0" prefWidth="652.0" style="-fx-background-color: yellow;" text="...some message..." />
+      <MenuBar layoutY="1.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Car">
+            <items>
+              <MenuItem fx:id="mitemCarInsert" mnemonicParsing="false" onAction="#onMenuItemCarClick" text="Insert" />
+                  <MenuItem fx:id="mitemCarDelete" mnemonicParsing="false" onAction="#onMenuItemCarClick" text="Delete" />
+                  <MenuItem fx:id="mitemCarUpdate" mnemonicParsing="false" onAction="#onMenuItemCarClick" text="Update" />
+                  <MenuItem fx:id="mitemCarReplace" mnemonicParsing="false" onAction="#onMenuItemCarClick" text="Replace" />
+                  <MenuItem fx:id="mitemCarFindAll" mnemonicParsing="false" onAction="#onMenuItemCarClick" text="find all" />
+                  <MenuItem fx:id="mitemCarFindYearHp" mnemonicParsing="false" onAction="#onMenuItemCarClick" text="find year/hp" />
+                  <MenuItem fx:id="mitemCarFindRelevance" mnemonicParsing="false" onAction="#onMenuItemCarClick" text="find relevance" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Database">
+            <items>
+              <MenuItem fx:id="mitemDatabaseConnect" mnemonicParsing="false" onAction="#onMenuItemDatabaseClick" text="Connect" />
+                  <MenuItem fx:id="mitemDatabaseClose" mnemonicParsing="false" onAction="#onMenuItemDatabaseClick" text="Close" />
+                  <MenuItem fx:id="mitemDatabaseCreateTextIndex" mnemonicParsing="false" onAction="#onMenuItemDatabaseClick" text="Create text index" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="txtName" layoutX="12.0" layoutY="52.0" promptText="Name" />
+      <TextField fx:id="txtYear" layoutX="199.0" layoutY="52.0" promptText="Year" />
+      <TextField fx:id="txtIp" layoutX="159.0" layoutY="3.0" text="127.0.0.1" />
+      <TextField fx:id="txtHp" layoutX="384.0" layoutY="52.0" promptText="HP" />
+      <TextArea fx:id="txtAreaDescription" layoutX="12.0" layoutY="86.0" prefHeight="167.0" prefWidth="652.0" promptText="Description" />
+      <ListView fx:id="lstCars" layoutX="12.0" layoutY="261.0" prefHeight="200.0" prefWidth="652.0" />
+   </children>
+</AnchorPane>

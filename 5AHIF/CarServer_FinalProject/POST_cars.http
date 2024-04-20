@@ -1,0 +1,20 @@
+POST http://localhost:8080/FinalProject/cars
+Content-Type: application/json
+
+{
+  "carName": "CarX",
+  "positions": [
+    {
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          46.62435448533561,
+          14.008668384034245
+        ]
+      },
+      "datetime": {
+        "$date": 1708723632000
+      }
+    }
+  ]
+}

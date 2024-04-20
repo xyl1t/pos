@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.RacerController">
+   <children>
+      <Label fx:id="lblMessage" layoutX="14.0" layoutY="299.0" prefHeight="40.0" prefWidth="551.0" style="-fx-background-color: yellow;" text="...some message..." />
+      <TableView fx:id="tblRacers" layoutX="14.0" layoutY="14.0" prefHeight="271.0" prefWidth="551.0">
+        <columns>
+          <TableColumn fx:id="colRacerDate" prefWidth="103.0" text="date" />
+          <TableColumn fx:id="colRacerName" prefWidth="200.0" text="name" />
+            <TableColumn fx:id="colRacerType" prefWidth="102.0" text="type" />
+            <TableColumn fx:id="colRacerTime" prefWidth="77.0" text="time" />
+            <TableColumn fx:id="colRacerRank" prefWidth="68.0" text="rank" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

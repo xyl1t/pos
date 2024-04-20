@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.MainController">
+   <children>
+      <Label fx:id="lblMsg" layoutY="572.0" prefHeight="28.0" prefWidth="800.0" style="-fx-background-color: yellow;" text="Msg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Button fx:id="btnStart" layoutX="530.0" layoutY="38.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="26.0" prefWidth="80.0" text="START" />
+      <Button fx:id="btnStop" layoutX="617.0" layoutY="38.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="26.0" prefWidth="80.0" text="STOP" />
+      <Label layoutX="117.0" layoutY="16.0" text="customers/minute" />
+      <TextField fx:id="txtCustPerMinute" layoutX="106.0" layoutY="38.0" prefHeight="26.0" prefWidth="121.0" text="25" />
+      <TextField fx:id="txtShoppingTime" layoutX="243.0" layoutY="38.0" prefHeight="26.0" prefWidth="121.0" text="5" />
+      <TextField fx:id="txtCashingTime" layoutX="381.0" layoutY="38.0" prefHeight="26.0" prefWidth="121.0" text="3" />
+      <Label layoutX="250.0" layoutY="16.0" text="shopping time (sec)" />
+      <Label layoutX="392.0" layoutY="16.0" text="cashing time (sec)" />
+      <ListView fx:id="listLog" layoutX="8.0" layoutY="419.0" prefHeight="127.0" prefWidth="784.0" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" />
+      <ImageView fitHeight="422.0" fitWidth="773.0" layoutX="14.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="172.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="171.62164306640625" AnchorPane.topAnchor="85.0">
+         <image>
+            <Image url="@shop.png" />
+         </image></ImageView>
+      <Label fx:id="lblCustomers" layoutX="536.0" layoutY="85.0" text="0 customers" />
+      <Label fx:id="lblEmergencyExits" layoutX="536.0" layoutY="109.0" text="0 emergency exits" />
+      <Label fx:id="lblAvgShopping" layoutX="536.0" layoutY="137.0" text="0 avg shopping duration" />
+      <Label fx:id="lblAvgQueuing" layoutX="536.0" layoutY="164.0" text="0 avg queuing time" />
+      <Label fx:id="lblUtilization" layoutX="536.0" layoutY="194.0" text="0% utilization of cash-register" />
+   </children>
+</AnchorPane>

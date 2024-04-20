@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.restaurant.pkgController.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="57.0" layoutX="618.0" layoutY="34.0" stroke="#0033ff" strokeType="INSIDE" width="266.0" />
+      <Label fx:id="lblMessage" layoutX="12.0" layoutY="468.0" prefHeight="33.0" prefWidth="870.0" style="-fx-background-color: yellow;" text="..." />
+      <MenuBar prefHeight="29.0" prefWidth="894.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Database">
+            <items>
+              <MenuItem fx:id="mitemOpen" mnemonicParsing="false" onAction="#onSelectMenuDatabase" text="Open" />
+                  <MenuItem fx:id="mitemClose" mnemonicParsing="false" onAction="#onSelectMenuDatabase" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Restaurant">
+            <items>
+              <MenuItem fx:id="mitemInsertRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Insert" />
+                  <MenuItem fx:id="mitemUpdateRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Update" />
+                  <MenuItem fx:id="mitemReplaceRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Replace" />
+                  <MenuItem fx:id="mitemDeleteRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Delete" />
+                  <MenuItem fx:id="mitemFilterRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Filter" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="txtNameRestaurant" layoutX="471.0" layoutY="60.0" prefHeight="26.0" prefWidth="143.0" promptText="name of restaurant" />
+      <TextField fx:id="txtLocationRestaurant" layoutX="622.0" layoutY="60.0" prefHeight="26.0" prefWidth="137.0" promptText="location of restaurant" />
+      <TextField fx:id="txtFoundedRestaurant" layoutX="763.0" layoutY="60.0" prefHeight="26.0" prefWidth="116.0" promptText="year founded" />
+      <TextArea fx:id="txtDescriptionRestaurant" layoutX="471.0" layoutY="96.0" prefHeight="228.0" prefWidth="412.0" promptText="description" />
+      <TableView fx:id="tblRestaurants" layoutX="14.0" layoutY="38.0" onMouseClicked="#onTableRestaurantsSelected" prefHeight="413.0" prefWidth="440.0">
+        <columns>
+          <TableColumn fx:id="colNameRestaurant" prefWidth="150.0" text="name" />
+          <TableColumn fx:id="colLocationRestaurant" prefWidth="161.0" text="location" />
+            <TableColumn fx:id="colFoundedRestaurant" prefWidth="109.0" text="founded" />
+        </columns>
+      </TableView>
+      <Label layoutX="663.0" layoutY="39.0" text="Search equals  AND Greater or Equal" textFill="#0033ff" />
+   </children>
+</AnchorPane>

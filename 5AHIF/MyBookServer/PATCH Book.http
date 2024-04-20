@@ -1,0 +1,8 @@
+PATCH http://localhost:8080/MyBookServer/books/44
+Content-Type: application/json
+
+{
+  "id": 44,
+  "title": "Faust",
+  "author": "Silverster Stallone"
+}

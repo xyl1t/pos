@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.MainController">
+   <children>
+      <Label fx:id="lblMessage" layoutX="12.0" layoutY="460.0" prefHeight="39.0" prefWidth="750.0" style="-fx-background-color: yellow;" text="...some message..." />
+      <GridPane layoutX="14.0" layoutY="33.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="108.0" prefWidth="269.0" style="-fx-background-color: lightgray;">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="43.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="206.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="id: " />
+            <Label text="name:" GridPane.rowIndex="1" />
+            <Label text="date:" GridPane.rowIndex="2" />
+            <TextField fx:id="txtId" prefHeight="24.0" prefWidth="204.0" text="11" GridPane.columnIndex="1" />
+            <TextField fx:id="txtName" promptText="name of car" text="Isetta" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtDate" promptText="dd.mm.yyyy" text="22.01.2012" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+      <MenuBar prefHeight="27.0" prefWidth="773.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="mitemStoreJson" mnemonicParsing="false" onAction="#onMenuFileSelected" text="Save to json" />
+                  <MenuItem fx:id="mitemLoadJson" mnemonicParsing="false" onAction="#onMenuFileSelected" text="Load from json" />
+                  <MenuItem fx:id="mitemLoadBin" mnemonicParsing="false" onAction="#onMenuFileSelected" text="Save to bin" />
+              <MenuItem fx:id="mitemStoreBin" mnemonicParsing="false" onAction="#onMenuFileSelected" text="Load from bin" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Car">
+            <items>
+              <MenuItem fx:id="mitemAddCar" mnemonicParsing="false" onAction="#onMenuCarSelected" text="Add" />
+                  <MenuItem fx:id="mitemDeleteCar" mnemonicParsing="false" onAction="#onMenuCarSelected" text="Delete" />
+                  <MenuItem fx:id="mitemUpdateCar" mnemonicParsing="false" onAction="#onMenuCarSelected" text="Update" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Repairs">
+               <items>
+                  <MenuItem fx:id="mitemAddRepair" mnemonicParsing="false" onAction="#onMenuRepairSelected" text="Add" />
+                  <MenuItem fx:id="mitemDeleteRepair" mnemonicParsing="false" onAction="#onMenuRepairSelected" text="Delete" />
+                  <MenuItem fx:id="mitemUpdateRepair" mnemonicParsing="false" onAction="#onMenuRepairSelected" text="Update" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TitledPane animated="false" layoutX="14.0" layoutY="231.0" prefHeight="223.0" prefWidth="269.0" text="repairs">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="274.0">
+               <children>
+                  <Label layoutX="33.0" layoutY="16.0" text="id:" />
+                  <Label layoutX="15.0" layoutY="50.0" text="date:" />
+                  <Label layoutX="16.0" layoutY="83.0" text="text:" />
+                  <Label layoutX="4.0" layoutY="160.0" text="amount:" />
+                  <TextField fx:id="txtRepairId" editable="false" layoutX="64.0" layoutY="15.0" prefHeight="24.0" prefWidth="192.0" text="0" />
+                  <DatePicker fx:id="dateRepairDate" layoutX="64.0" layoutY="49.0" prefHeight="24.0" prefWidth="193.0" />
+                  <TextField fx:id="txtRepairAmount" layoutX="64.0" layoutY="159.0" prefHeight="24.0" prefWidth="192.0" />
+                  <TextArea fx:id="txtRepairText" layoutX="66.0" layoutY="79.0" prefHeight="76.0" prefWidth="190.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TableView fx:id="tblCars" layoutX="292.0" layoutY="33.0" onMouseClicked="#onCarSelected" prefHeight="192.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="colCarId" prefWidth="64.0" text="ID" />
+          <TableColumn fx:id="colCarName" prefWidth="260.0" text="Name" />
+            <TableColumn fx:id="colCarDate" minWidth="2.0" prefWidth="141.0" text="Date" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblRepairs" layoutX="292.0" layoutY="231.0" onMouseClicked="#onRepairSelected" prefHeight="223.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="colRepairId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colRepairDate" prefWidth="97.0" text="Date" />
+            <TableColumn fx:id="colRepairText" prefWidth="200.0" text="Text" />
+            <TableColumn fx:id="colRepairAmount" prefWidth="89.0" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

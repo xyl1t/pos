@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="16.0.1" class="java.beans.XMLDecoder">
+ <object class="pkgData.Tool" id="Tool0">
+  <void property="name">
+   <string>Knife</string>
+  </void>
+  <void property="price">
+   <int>12</int>
+  </void>
+ </object>
+ <object class="java.util.TreeSet">
+  <void method="add">
+   <object class="pkgData.Tool">
+    <void property="name">
+     <string>Fork</string>
+    </void>
+    <void property="price">
+     <int>5</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object idref="Tool0"/>
+  </void>
+  <void method="add">
+   <object class="pkgData.Tool">
+    <void property="name">
+     <string>Knife</string>
+    </void>
+    <void property="price">
+     <int>11</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="pkgData.Tool">
+    <void property="name">
+     <string>Light</string>
+    </void>
+    <void property="price">
+     <int>8</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="pkgData.Tool">
+    <void property="name">
+     <string>Scissors</string>
+    </void>
+    <void property="price">
+     <int>77</int>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

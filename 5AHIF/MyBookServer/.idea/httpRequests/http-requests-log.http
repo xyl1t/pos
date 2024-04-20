@@ -1,0 +1,235 @@
+PATCH http://localhost:8080/MyBookServer/books/44
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Faust",
+  "author": "Silverster Stallone"
+}
+
+<> 2024-01-12T100624.200.octet-stream
+
+###
+
+POST http://localhost:8080/MyBookServer/books
+Content-Type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+<> 2024-01-12T100617.201.json
+
+###
+
+GET http://localhost:8080/MyBookServer/books/22
+accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-12T100610.200.json
+
+###
+
+GET http://localhost:8080/MyBookServer/books/44
+accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-08T092956.200.json
+
+###
+
+PATCH http://localhost:8080/MyBookServer/books/44
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Faust",
+  "author": "Silverster Stallone"
+}
+
+<> 2024-01-08T092948.200.octet-stream
+
+###
+
+POST http://localhost:8080/MyBookServer/books
+Content-Type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+<> 2024-01-08T092944.201.json
+
+###
+
+GET http://localhost:8080/MyBookServer/books/44
+accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-08T092903.200.json
+
+###
+
+GET http://localhost:8080/MyBookServer/books/22
+accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-08T092900.200.json
+
+###
+
+PATCH http://localhost:8080/MyBookServer/books/44
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Faust",
+  "author": "Silverster Stallone"
+}
+
+###
+
+POST http://localhost:8080/MyBookServer/books
+Content-Type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+<> 2024-01-08T092017.201.json
+
+###
+
+POST http://localhost:8080/MyBookServer/books/22
+Content-Type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+###
+
+GET http://localhost:8080/MyBookServer/books/22
+accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-08T091325.200.json
+
+###
+
+POST http://localhost:8080/MyBookServer/books/22
+Content-Type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+###
+
+POST http://localhost:8080/MyBookServer/books/22
+Content-Type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+###
+
+POST http://localhost:8080/MyBookServer/books/22
+Content-Type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+###
+
+POST http://localhost:8080/MyBookServer/books/22
+content-type: application/json
+Content-Length: 92
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 44,
+  "title": "Geschichten aus dem Wienerwald",
+  "author": "Öden von Horvath"
+}
+
+###
+
+GET http://localhost:8080/MyBookServer/books/22
+accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-08T091119.200.json
+
+###
+

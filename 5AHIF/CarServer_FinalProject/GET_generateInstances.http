@@ -1,0 +1,1 @@
+GET localhost:8080/FinalProject/generateInstances?cars=10&petrolstations=3

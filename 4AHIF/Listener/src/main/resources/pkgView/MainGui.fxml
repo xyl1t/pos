@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="188.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.MainController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="287.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Appl">
+            <items>
+              <MenuItem fx:id="mitemApplCreateListener" mnemonicParsing="false" onAction="#onApplMenuClick" text="Create Listener" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Song">
+            <items>
+              <MenuItem fx:id="mitemSongInsert" mnemonicParsing="false" onAction="#onSongMenuClick" text="Insert" />
+                  <MenuItem fx:id="mitemSongDeleteFirst" mnemonicParsing="false" onAction="#onSongMenuClick" text="Delete first" />
+                  <MenuItem fx:id="mitemSongUpdateFirst" mnemonicParsing="false" onAction="#onSongMenuClick" text="Update first" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane layoutX="16.0" layoutY="41.0" prefHeight="88.0" prefWidth="259.0" style="-fx-background-color: lightgray;">
+         <children>
+            <TextField fx:id="txtName" layoutX="76.0" layoutY="13.0" />
+            <TextField fx:id="txtAuthor" layoutX="76.0" layoutY="48.0" />
+            <Label layoutX="11.0" layoutY="52.0" text="Author" />
+            <Label layoutX="14.0" layoutY="17.0" text="Name" />
+         </children>
+      </Pane>
+      <Label fx:id="lblMessage" layoutX="14.0" layoutY="143.0" prefHeight="29.0" prefWidth="259.0" style="-fx-background-color: lightgray;" text="Label">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

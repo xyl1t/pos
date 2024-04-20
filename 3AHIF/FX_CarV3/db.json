@@ -1,0 +1,109 @@
+{
+  "Isetta": {
+    "id": 11,
+    "name": "Isetta",
+    "date": {
+      "year": 2012,
+      "month": 1,
+      "day": 22
+    },
+    "collRepairs": [
+      [
+        {
+          "year": 2022,
+          "month": 1,
+          "day": 14
+        },
+        {
+          "id": 0,
+          "date": {
+            "year": 2022,
+            "month": 1,
+            "day": 14
+          },
+          "text": "a",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "year": 2022,
+          "month": 1,
+          "day": 16
+        },
+        {
+          "id": 2,
+          "date": {
+            "year": 2022,
+            "month": 1,
+            "day": 16
+          },
+          "text": "updated!!!\npart 2\npart 3\npart 4",
+          "amount": 16
+        }
+      ]
+    ]
+  },
+  "testCar": {
+    "id": 12,
+    "name": "testCar",
+    "date": {
+      "year": 2015,
+      "month": 11,
+      "day": 3
+    },
+    "collRepairs": [
+      [
+        {
+          "year": 2022,
+          "month": 1,
+          "day": 17
+        },
+        {
+          "id": 3,
+          "date": {
+            "year": 2022,
+            "month": 1,
+            "day": 17
+          },
+          "text": "d",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "year": 2022,
+          "month": 1,
+          "day": 18
+        },
+        {
+          "id": 4,
+          "date": {
+            "year": 2022,
+            "month": 1,
+            "day": 18
+          },
+          "text": "e",
+          "amount": 5
+        }
+      ],
+      [
+        {
+          "year": 2022,
+          "month": 1,
+          "day": 19
+        },
+        {
+          "id": 8,
+          "date": {
+            "year": 2022,
+            "month": 1,
+            "day": 19
+          },
+          "text": "hey",
+          "amount": 999
+        }
+      ]
+    ]
+  }
+}

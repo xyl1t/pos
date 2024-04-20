@@ -1,0 +1,15 @@
+POST http://localhost:8080/FinalProject/petrolstations
+Content-Type: application/json
+
+{
+  "stationName": "PetrolX",
+  "positions": [
+    {
+      "type": "Point",
+      "coordinates": [
+        47.14389626431493,
+        14.378986950406418
+      ]
+    }
+  ]
+}

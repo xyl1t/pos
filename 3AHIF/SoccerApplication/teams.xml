@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="16.0.1" class="java.beans.XMLDecoder">
+ <object class="pkgData.Database" id="Database0">
+  <void property="collTeams">
+   <void method="add">
+    <object class="pkgData.Team">
+     <void property="goalsGot">
+      <int>6</int>
+     </void>
+     <void property="goalsShot">
+      <int>3</int>
+     </void>
+     <void property="name">
+      <string>Austria</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="pkgData.Team">
+     <void property="goalsGot">
+      <int>4</int>
+     </void>
+     <void property="goalsShot">
+      <int>5</int>
+     </void>
+     <void property="name">
+      <string>Germany</string>
+     </void>
+     <void property="points">
+      <int>4</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="pkgData.Team">
+     <void property="goalsGot">
+      <int>4</int>
+     </void>
+     <void property="goalsShot">
+      <int>7</int>
+     </void>
+     <void property="name">
+      <string>Spain</string>
+     </void>
+     <void property="points">
+      <int>7</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="pkgData.Team">
+     <void property="goalsGot">
+      <int>2</int>
+     </void>
+     <void property="goalsShot">
+      <int>1</int>
+     </void>
+     <void property="name">
+      <string>Sweden</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

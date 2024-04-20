@@ -1,0 +1,2 @@
+#GET localhost:8080/FinalProject/petrolstations/createPositionIndex
+GET localhost:8080/FinalProject/nearestPetrolStations?carId=65eb1d96713da45705c0fb10&maxDistance=500000.0

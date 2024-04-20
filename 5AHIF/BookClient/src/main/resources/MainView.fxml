@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.MainController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="350.0" prefWidth="172.0" spacing="8.0">
+         <children>
+            <Button fx:id="btnConnection" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBtnClick" text="Connection">
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGetBook" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Get Book" />
+            <Button fx:id="btnGetAllBooks" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Get All Books" />
+            <Button fx:id="btnAddBook" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Add Book" />
+            <Button fx:id="btnUpdateBook" layoutX="10.0" layoutY="124.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Update Book" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Delete Book" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Show Image" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Upload" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnClick" text="Download" />
+         </children>
+      </VBox>
+      <Label fx:id="lblMessage" maxWidth="1.7976931348623157E308" style="-fx-background-color: yellow;" text="Message label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txtUri" layoutX="198.0" layoutY="14.0" prefHeight="26.0" prefWidth="685.0" promptText="http://localhost:8080" text="http://localhost:8080/MyBookServer" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <TextArea fx:id="txtBookDetails" layoutX="581.0" layoutY="210.0" prefHeight="256.0" prefWidth="299.0" promptText="Book details" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="210.0" />
+      <Label layoutX="581.0" layoutY="188.0" text="Book Details" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="188.0" />
+      <GridPane layoutX="581.0" layoutY="66.0" prefHeight="115.0" prefWidth="299.0" AnchorPane.rightAnchor="14.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="181.0" minWidth="10.0" prefWidth="47.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="442.0" minWidth="10.0" prefWidth="252.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label text="id" />
+            <TextField fx:id="txtId" prefHeight="26.0" prefWidth="252.0" promptText="book id" GridPane.columnIndex="1" />
+            <Label text="Author" GridPane.rowIndex="2" />
+            <TextField fx:id="txtAuthor" prefHeight="26.0" prefWidth="252.0" promptText="book author" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtTitle" prefHeight="26.0" prefWidth="252.0" promptText="book title" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Title" GridPane.rowIndex="1" />
+            <Label text="Image" GridPane.rowIndex="3" />
+            <TextField fx:id="txtImage" prefHeight="26.0" prefWidth="252.0" promptText="book image" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tableBooks" layoutX="195.0" layoutY="59.0" onMouseClicked="#onSelectBook" prefHeight="407.0" prefWidth="377.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="322.0" AnchorPane.topAnchor="59.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="colTitle" prefWidth="134.0" text="Titel" />
+            <TableColumn fx:id="colAuthor" prefWidth="165.0" text="Author" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

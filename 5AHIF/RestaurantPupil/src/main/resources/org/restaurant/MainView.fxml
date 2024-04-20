@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.restaurant.pkgController.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="57.0" layoutX="618.0" layoutY="34.0" stroke="#0033ff" strokeType="INSIDE" width="266.0" />
+      <Label fx:id="lblMessage" layoutX="12.0" layoutY="568.0" prefHeight="33.0" prefWidth="870.0" style="-fx-background-color: yellow;" text="..." AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <MenuBar prefHeight="29.0" prefWidth="894.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Database">
+            <items>
+              <MenuItem fx:id="mitemOpen" mnemonicParsing="false" onAction="#onSelectMenuDatabase" text="Open" />
+                  <MenuItem fx:id="mitemClose" mnemonicParsing="false" onAction="#onSelectMenuDatabase" text="Close" />
+                  <MenuItem fx:id="mitemCreateIndex" mnemonicParsing="false" onAction="#onSelectMenuDatabase" text="Create Index" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Restaurant">
+            <items>
+              <MenuItem fx:id="mitemInsertRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Insert" />
+                  <MenuItem fx:id="mitemUpdateRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Update" />
+                  <MenuItem fx:id="mitemReplaceRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Replace" />
+                  <MenuItem fx:id="mitemDeleteRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Delete" />
+                  <MenuItem fx:id="mitemFilterRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Filter" />
+                  <MenuItem fx:id="mitemFilterTextRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Filter Text" />
+                  <MenuItem fx:id="mitemRegularGuestRestaurant" mnemonicParsing="false" onAction="#onSelectMenuRestaurant" text="Regular Guest" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Owner">
+            <items>
+              <MenuItem fx:id="mitemAssignOwner" mnemonicParsing="false" onAction="#onSelectMenuOwner" text="Assign =&gt; Restaurant" />
+                  <MenuItem fx:id="mitemUpdateOwner" mnemonicParsing="false" onAction="#onSelectMenuOwner" text="Update" />
+                  <MenuItem fx:id="mitemFindOwner" mnemonicParsing="false" onAction="#onSelectMenuOwner" text="Find" />
+                  <MenuItem fx:id="mitemDeleteOwner" mnemonicParsing="false" onAction="#onSelectMenuOwner" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Location">
+               <items>
+                  <MenuItem fx:id="mitemOpenLocationGui" mnemonicParsing="false" onAction="#onSelectMenuLocation" text="Open GUI" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="txtNameRestaurant" layoutX="471.0" layoutY="60.0" prefHeight="26.0" prefWidth="143.0" promptText="name of restaurant" />
+      <TextField fx:id="txtLocationRestaurant" layoutX="622.0" layoutY="60.0" prefHeight="26.0" prefWidth="137.0" promptText="location of restaurant" />
+      <TextField fx:id="txtFoundedRestaurant" layoutX="763.0" layoutY="60.0" prefHeight="26.0" prefWidth="116.0" promptText="year founded" />
+      <TextArea fx:id="txtDescriptionRestaurant" layoutX="471.0" layoutY="96.0" prefHeight="228.0" prefWidth="412.0" promptText="description" />
+      <TableView fx:id="tblRestaurants" layoutX="14.0" layoutY="38.0" onMouseClicked="#onTableRestaurantsSelected" prefHeight="521.0" prefWidth="440.0">
+        <columns>
+          <TableColumn fx:id="colNameRestaurant" prefWidth="150.0" text="name" />
+          <TableColumn fx:id="colLocationRestaurant" prefWidth="161.0" text="location" />
+            <TableColumn fx:id="colFoundedRestaurant" prefWidth="109.0" text="founded" />
+        </columns>
+      </TableView>
+      <Label layoutX="652.0" layoutY="38.0" text="Search equals  AND Greater or Equal" textFill="#0033ff" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="217.0" layoutX="471.0" layoutY="340.0" stroke="#0033ff" strokeType="INSIDE" width="412.0" />
+      <TextField fx:id="txtOwnerName" layoutX="478.0" layoutY="369.0" prefHeight="26.0" prefWidth="197.0" promptText="Owner name" />
+      <Label layoutX="482.0" layoutY="346.0" text="Owner" textFill="#0033ff" />
+      <DatePicker fx:id="dateOwner" layoutX="681.0" layoutY="369.0" prefHeight="26.0" prefWidth="197.0" />
+      <TextArea fx:id="txtOwnerDesc" layoutX="478.0" layoutY="404.0" prefHeight="147.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>
